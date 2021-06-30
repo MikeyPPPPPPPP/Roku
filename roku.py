@@ -4,7 +4,7 @@ class roku:
 	def __init__(self, ip):
 		self.ip = ip
 		self.url = ''
-	def build_url(self,text):
+	def _build_url(self,text):
 		self.url = 'http://'+self.ip+':8060/keypress/'+text
 
 	def power(self):
